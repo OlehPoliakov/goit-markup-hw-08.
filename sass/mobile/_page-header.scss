@@ -3,24 +3,26 @@
 
 @media screen and (max-width: 480px) {
     .header {
-            border-bottom: 1px solid #ECECEC;
-
+        border-bottom: 1px solid #ECECEC;
     }
     .page-header {
         display: flex;
+        justify-content: start;
+        align-items: center;
         height: 60px;
     }
 
-    .page-header__navigate {
-        display: flex;
-        align-items: center;
-    }
+    // .page-header__navigate {
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;
+    // }
 
     .page-header__logo {
         text-decoration: none;
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
-        font-size: 26px;
+        font-size: 24px;
         line-height: 1.2;
         letter-spacing: 0.03em;
     }

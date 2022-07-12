@@ -2,12 +2,10 @@
 /* -------------------- Main__Hero -------------------- */
 @media screen and (max-width: 480px) {
     .hero {
-        // position: relative;
-        padding-top: 200px;
-        padding-bottom: 200px;
+        padding-top: 118px;
+        padding-bottom: 118px;
 
-        height: 600px;
-        max-width: 480px;
+        
         margin-left: auto;
         margin-right: auto;
 
@@ -16,9 +14,10 @@
                 rgba(47, 48, 58, 0.4)),
             url(../../images/hero.jpg);
 
+        width: 480px;
         background-repeat: no-repeat;
-        background-position: center;
-        background-size: unset;
+        background-position: 50% 50%;
+        background-size: cover;
     }
 
     .hero__title {
