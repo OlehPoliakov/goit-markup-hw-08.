@@ -1,0 +1,44 @@
+/* _________________________________________________________________ */
+/* --------------------Main__Clients-------------------- */
+.section-clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.clients__heading {
+    text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+}
+.client {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.client_item:not(:last-child) {
+    margin-right: 30px;
+}
+.client__link {
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    display: flex;
+    fill: var(--icon-color);
+    transition: 250ms var(--timing-function);
+
+    &:hover,
+    &:focus {
+        fill: var(--hover-text-color);
+        border: 1px solid #2196F3;
+        outline: none;
+    }
+}
+.client__image {
+    width: 170px;
+    height: 92px;
+}

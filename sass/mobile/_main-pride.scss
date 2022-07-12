@@ -1,0 +1,40 @@
+/* _________________________________________________________________ */
+/* --------------------Main__Pride-------------------- */
+@media screen and (max-width: 480px) {
+    .section-pride {
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        .pride {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .pride__image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-width: 450px;
+            min-height: 120px;
+            // padding: 25px 190px;
+            border-radius: 4px;
+            background-color: var(--grey-text-color);
+            margin-bottom: 30px;
+        }
+
+        .pride__heading {
+            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.2;
+            text-transform: uppercase;
+        }
+
+        .pride__paragraph {
+            font-size: 14px;
+            line-height: 1.71;
+            color: var(--title-text-color);
+        }
+}
