@@ -1,0 +1,86 @@
+
+    html {
+        box-sizing: border-box
+    }
+
+    *,
+    *::before,
+    *::after {
+        box-sizing: inherit;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        font-style: normal;
+        background-color: var(--white-text-color);
+        color: var(--primary-text-color);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    a {
+        text-decoration: none;
+        font-style: normal;
+    }
+
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+
+    .container {
+        width: 480px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* _____________________________________________________________________ */
+/* -------------------- mobile 480px-------------------- */
+@media screen and (max-width: 480px) {
+    .section-projects {
+        display: none;
+    }
+}
+/* _____________________________________________________________________ */
+/* -------------------- tablet 768px-------------------- */
+@media screen and (min-width: 481px) {
+    .container {
+        width: 768px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .section-projects {
+        display: none;
+    }
+}
+/* _____________________________________________________________________ */
+/* -------------------- desctop 1600px-------------------- */
+@media screen and (min-width: 769px) {
+    .container {
+        width: 1200px;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        // outline: 2px solid tomato;
+    }
+}
