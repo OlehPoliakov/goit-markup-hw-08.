@@ -1,0 +1,37 @@
+@media screen and (max-width: 767px) {
+    .header {
+        border-bottom: 1px solid #ECECEC;
+    }
+
+    .page-header {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        height: 60px;
+    }
+
+    .page-header__logo {
+        text-decoration: none;
+        font-family: 'Raleway', sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+    }
+
+    .page-header__logo--web {
+        color: var(--hover-text-color);
+    }
+
+    .page-header__logo--studio {
+        color: var(--primary-text-color);
+    }
+
+    .site-nav {
+        display: none;
+    }
+
+    .auth-nav {
+        display: none;
+    }
+}

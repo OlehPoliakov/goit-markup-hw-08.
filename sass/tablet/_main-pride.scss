@@ -1,0 +1,49 @@
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+    .section-pride {
+        display: flex;
+        flex-wrap: wrap;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .pride {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: -15px;
+    }
+
+    .pride__item {
+        width: 354px;
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+    }
+
+
+    .pride__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 120px;
+        border-radius: 4px;
+        background-color: var(--grey-text-color);
+        margin-bottom: 30px;
+    }
+
+    .pride__heading {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+    }
+
+    .pride__paragraph {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: var(--title-text-color);
+    }
+}

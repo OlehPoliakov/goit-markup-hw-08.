@@ -1,9 +1,5 @@
-@import 'project/colors';
-@import 'project/global';
-@import 'project/page-header';
-@import 'project/main-hero';
-@import 'project/main-pride';
-@import 'project/main-team';
-@import 'project/main-clients';
-@import 'project/page-footer';
-@import 'project/_main_project';
+@import 'util/colors';
+@import 'util/global';
+@import 'mobile/index-mobile';
+@import 'tablet/index-tablet';
+@import 'desctop/index-desctop';
