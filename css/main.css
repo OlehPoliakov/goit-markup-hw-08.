@@ -90,6 +90,9 @@ a {
 }
 @media screen and (max-width: 767px) {
   .header {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     border-bottom: 1px solid #ECECEC;
   }
   .page-header {
@@ -331,6 +334,9 @@ a {
 }
 @media screen and (max-width: 767px) {
   .section-pride {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 60px;
     padding-bottom: 60px;
   }
@@ -367,6 +373,9 @@ a {
 }
 @media screen and (max-width: 767px) {
   .section-team {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--grey-text-color);
     padding-bottom: 60px;
     padding-top: 60px;
@@ -381,9 +390,6 @@ a {
     color: var(--primary-text-color);
   }
   .team-cards {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     width: 450px;
   }
   .team {
@@ -443,6 +449,9 @@ a {
 }
 @media screen and (max-width: 767px) {
   .section-clients {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     display: flex;
     flex-wrap: wrap;
     padding-top: 60px;
@@ -485,6 +494,9 @@ a {
 }
 @media screen and (max-width: 767px) {
   .footer {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     text-align: center;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -635,6 +647,9 @@ a {
 }
 @media screen and (max-width: 767px) {
   .section-portfolio {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 60px;
     padding-bottom: 60px;
   }
