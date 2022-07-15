@@ -823,7 +823,7 @@ a {
     letter-spacing: 0.02em;
     color: #2196F3;
   }
-  .site-nav__link {
+  .menu-modal__link {
     font-weight: 500;
     font-size: 40px;
     line-height: 1.17;
@@ -831,7 +831,10 @@ a {
     color: #212121;
     margin-bottom: 32px;
   }
-  .site-nav__link:hover, .site-nav__link:focus {
+  .menu-modal__link:hover, .menu-modal__link:focus {
+    color: #2196F3;
+  }
+  .menu-modal_link--current {
     color: #2196F3;
   }
   .contacts__link {
