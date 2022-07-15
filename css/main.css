@@ -764,7 +764,7 @@ a {
     height: 40px;
     z-index: 1;
     fill: red;
-    transition: fill 2500ms #2196F3 var(--timing-function);
+    transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
   }
   .header__menu--close {
@@ -1733,8 +1733,7 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 200px 350px;
     height: 600px;
     max-width: 1600px;
     margin-left: auto;
@@ -1747,7 +1746,6 @@ a {
   .hero__title {
     text-align: center;
     padding-bottom: 30px;
-    margin: 0;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
