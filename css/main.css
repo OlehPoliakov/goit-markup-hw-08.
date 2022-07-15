@@ -763,8 +763,8 @@ a {
     width: 40px;
     height: 40px;
     z-index: 1;
-    fill: red;
-    transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: #212121;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
   }
   .header__menu--close {
@@ -773,7 +773,6 @@ a {
   }
   .header__menu--open {
     display: none;
-    fill: #212121;
   }
   .header__menu.is-open .header__menu--close {
     display: none;
@@ -782,10 +781,10 @@ a {
     display: block;
   }
   .header__menu:hover {
-    fill: red;
+    fill: #2196F3;
   }
   .header__menu.is-open:hover {
-    fill: red;
+    fill: #2196F3;
   }
   .menu-modal {
     width: 480px;
