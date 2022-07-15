@@ -1,6 +1,7 @@
 @media screen and (max-width: 767px) {
     .header {
-        width: 480px;
+        position: relative;
+        min-width: 480px;
         margin-left: auto;
         margin-right: auto;
         border-bottom: 1px solid #ECECEC;
@@ -9,7 +10,6 @@
     .page-header {
         display: flex;
         height: 60px;
-        position: relative;
     }
 
     .page-header__navigate {

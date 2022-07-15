@@ -1,6 +1,6 @@
 @media screen and (max-width: 767px) {
     .section-team {
-        width: 480px;
+        min-width: 480px;
         margin-left: auto;
         margin-right: auto;
         background-color: var(--grey-text-color);

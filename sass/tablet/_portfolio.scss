@@ -105,10 +105,14 @@
         background-color: #FFFFFF;
         z-index: 2;
     }
+        .portfolio-gallery__item--current {
+            height: 146px;
+        }
 
     .portfolio-gallery__overlay {
+
         position: absolute;
-        bottom: 109px;
+        top: 0;
         width: 354px;
         height: 294px;
         padding: 63px 24px;

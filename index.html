@@ -28,13 +28,18 @@
                     </a>
                 </div>
 
-                <button type="button" class="header__menu is-open" data-menu-button aria-expanded="false">
+                <button type="button" 
+                    class="header__menu is-open" 
+                    data-menu-button 
+                    aria-expanded="false"
+                    aria-controls="menu-modal"
+                    data-menu-button="">
                     <svg width="24" height="16" aria-label="Переключатель мобильного меню">
                         <use class="header__menu--close" href="./images/symbol-defs.svg#icon-close-mob"></use>
                         <use class="header__menu--open" href="./images/symbol-defs.svg#icon-open-mob"></use>
                     </svg>
                 </button>
-                <div class="menu-modal is-open" data-menu>
+                <div class="menu-modal is-open" data-menu id="menu-modal">
                     <ul>
                         <li class="menu-modal__item">
                             <a href="./index.html" class="menu-modal__link  menu-modal_link--current">Студия</a>

@@ -1,18 +1,21 @@
 @media screen and (max-width: 767px) {
     .header__menu {
+        position: fixed;
         display: inline-flex;
         justify-content: center;
         align-items: center;
+        right: 10px;
         margin: 0;
         padding: 0;
         border: none;
-        background-color: #fff;
+        background: none;
         width: 40px;
         height: 40px;
         z-index: 5;
         fill: #212121;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
         cursor: pointer;
+        overflow-y: scroll;
 
         &--close {
             display: block;
@@ -29,6 +32,7 @@
         &.is-open &--open {
             display: block;
         }
+
         &:hover {
             fill: #2196F3;
             transition: 250ms;
@@ -36,16 +40,16 @@
     }
 
     .menu-modal {
-        position: absolute;
+        position: fixed;
         display: block;
-        top: 0px;
+        top: 0;
         left: 0;
         width: 100%;
         z-index: 4;
         background-color: #fff;
         padding: 48px 40px;
-    
-    
+        overflow-y: scroll;
+
         &.is-open {
             display: none;
         }
@@ -66,7 +70,7 @@
             }
         }
 
-        &__social--network {           
+        &__social--network {
             display: inline-flex;
             padding-right: 10px;
 
@@ -75,6 +79,7 @@
                 border-right: 1px solid rgba(33, 33, 33, 0.2);
             }
         }
+
         &__social--border {
             font-weight: 500;
             font-size: 18px;
@@ -82,7 +87,6 @@
             letter-spacing: 0.02em;
             color: #2196F3;
         }
-
     }
 
     .menu-modal__link {
@@ -95,7 +99,7 @@
 
         &:hover,
         &:focus {
-        color: #2196F3;
+            color: #2196F3;
         }
     }
 

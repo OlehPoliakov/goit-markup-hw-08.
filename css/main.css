@@ -64,6 +64,9 @@ a {
   .container {
     width: 480px;
   }
+  body .is-open {
+    overflow: hidden;
+  }
 }
 /* _____________________________________________________________________ */
 /* -------------------- tablet 768px-------------------- */
@@ -96,7 +99,8 @@ a {
 }
 @media screen and (max-width: 767px) {
   .header {
-    width: 480px;
+    position: relative;
+    min-width: 480px;
     margin-left: auto;
     margin-right: auto;
     border-bottom: 1px solid #ECECEC;
@@ -104,7 +108,6 @@ a {
   .page-header {
     display: flex;
     height: 60px;
-    position: relative;
   }
   .page-header__navigate {
     display: flex;
@@ -134,31 +137,34 @@ a {
 }
 @media screen and (max-width: 767px) {
   .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
-    padding-left: 60px;
-    padding-right: 60px;
-    margin: auto;
+    padding: 118px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 400px;
+    min-width: 480px;
+    margin-left: auto;
+    margin-right: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero.jpg);
-    display: block;
-    width: 480px;
     background-repeat: no-repeat;
-    background-position: 50% 50%;
+    background-position: center;
     background-size: cover;
   }
   .hero__title {
+    width: 360px;
+    height: 84px;
     text-align: center;
     padding-bottom: 30px;
+    font-family: "Roboto";
+    font-style: normal;
     font-weight: 900;
-    font-size: 24px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 42px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--white-text-color);
+    color: #FFFFFF;
   }
   .hero__button {
-    display: flex;
-    align-items: center;
     padding: 10px 32px;
     margin: auto;
     font-family: "Roboto", sans-serif;
@@ -183,6 +189,7 @@ a {
     background: rgba(0, 0, 0, 0.2);
     z-index: 3;
     transition: opacity 250ms var(--timing-function);
+    overflow-y: scroll;
   }
   .backdrop.is-hidden {
     opacity: 0;
@@ -345,7 +352,7 @@ a {
 }
 @media screen and (max-width: 767px) {
   .section-pride {
-    width: 480px;
+    min-width: 480px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 60px;
@@ -384,7 +391,7 @@ a {
 }
 @media screen and (max-width: 767px) {
   .section-team {
-    width: 480px;
+    min-width: 480px;
     margin-left: auto;
     margin-right: auto;
     background-color: var(--grey-text-color);
@@ -460,7 +467,7 @@ a {
 }
 @media screen and (max-width: 767px) {
   .section-clients {
-    width: 480px;
+    min-width: 480px;
     margin-left: auto;
     margin-right: auto;
     display: flex;
@@ -505,7 +512,7 @@ a {
 }
 @media screen and (max-width: 767px) {
   .footer {
-    width: 480px;
+    min-width: 480px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -743,7 +750,7 @@ a {
   }
   .portfolio-gallery__overlay {
     position: absolute;
-    bottom: 115px;
+    top: 0;
     width: 100%;
     height: 294px;
     padding: 63px 24px;
@@ -754,19 +761,22 @@ a {
 }
 @media screen and (max-width: 767px) {
   .header__menu {
+    position: fixed;
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    right: 10px;
     margin: 0;
     padding: 0;
     border: none;
-    background-color: #fff;
+    background: none;
     width: 40px;
     height: 40px;
     z-index: 5;
     fill: #212121;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
+    overflow-y: scroll;
   }
   .header__menu--close {
     display: block;
@@ -785,14 +795,15 @@ a {
     transition: 250ms;
   }
   .menu-modal {
-    position: absolute;
+    position: fixed;
     display: block;
-    top: 0px;
+    top: 0;
     left: 0;
     width: 100%;
     z-index: 4;
     background-color: #fff;
     padding: 48px 40px;
+    overflow-y: scroll;
   }
   .menu-modal.is-open {
     display: none;
@@ -1594,9 +1605,12 @@ a {
     background-color: #FFFFFF;
     z-index: 2;
   }
+  .portfolio-gallery__item--current {
+    height: 146px;
+  }
   .portfolio-gallery__overlay {
     position: absolute;
-    bottom: 109px;
+    top: 0;
     width: 354px;
     height: 294px;
     padding: 63px 24px;
@@ -1734,7 +1748,10 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .hero {
-    padding: 200px 350px;
+    padding: 200px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     height: 600px;
     max-width: 1600px;
     margin-left: auto;
@@ -1745,18 +1762,20 @@ a {
     background-size: cover;
   }
   .hero__title {
+    width: 670px;
+    height: 120px;
     text-align: center;
     padding-bottom: 30px;
+    font-family: "Roboto";
+    font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 1.36;
+    line-height: 60px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--white-text-color);
+    color: #FFFFFF;
   }
   .hero__button {
-    display: flex;
-    align-items: center;
     padding: 10px 32px;
     margin: auto;
     font-family: "Roboto", sans-serif;
@@ -1799,7 +1818,7 @@ a {
   }
   .modal-box {
     text-align: center;
-    padding: 30px;
+    padding: 40px;
     top: 75px;
     left: 41px;
     right: 39px;
@@ -1807,6 +1826,8 @@ a {
   }
   .modal-box__title {
     margin-bottom: 30px;
+    font-family: "Roboto";
+    font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
@@ -1817,7 +1838,7 @@ a {
   .modal-form__group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 31px;
+    margin-top: 30px;
     position: relative;
   }
   .modal-form__lable {
@@ -1862,13 +1883,13 @@ a {
     outline: none;
   }
   .form-checkbox {
-    margin-top: 20px;
     margin-bottom: 30px;
   }
   .form-checkbox__label {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
     font-size: 14px;
     line-height: 1.71;
     color: #757575;
@@ -2325,14 +2346,6 @@ a {
     flex-wrap: wrap;
     justify-content: center;
   }
-  .portfolio-gallery__item {
-    width: 370px;
-    height: 404px;
-  }
-  .portfolio-gallery__item img {
-    width: 370px;
-    display: block;
-  }
   .portfolio-gallery__item:not(:nth-child(3n)) {
     margin-right: 30px;
   }
@@ -2345,6 +2358,12 @@ a {
   .portfolio-gallery__item:hover {
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  .portfolio-gallery__item img {
+    width: 370px;
+    display: block;
+    background-position: center;
+    background-size: cover;
   }
   .portfolio-gallery__header {
     font-family: "Roboto", sans-serif;
@@ -2368,6 +2387,7 @@ a {
     color: #FFFFFF;
   }
   .portfolio-gallery__item--box {
+    width: 370px;
     position: relative;
     overflow: hidden;
     z-index: 1;

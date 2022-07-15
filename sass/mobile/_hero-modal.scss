@@ -8,6 +8,7 @@
         background: rgba(0, 0, 0, 0.2);
         z-index: 3;
         transition: opacity 250ms var(--timing-function);
+        overflow-y: scroll;
     }
 
     .backdrop.is-hidden {
