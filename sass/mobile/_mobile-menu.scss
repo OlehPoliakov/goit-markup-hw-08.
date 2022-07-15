@@ -31,11 +31,11 @@
         }
         &:hover {
             fill: #2196F3;
+            transition: 250ms;
         }
     }
 
     .menu-modal {
-        width: 480px;
         position: absolute;
         display: block;
         top: 0px;

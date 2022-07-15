@@ -140,7 +140,7 @@ a {
     padding-right: 60px;
     margin: auto;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../images/hero.jpg);
-    width: 480px;
+    width: 478px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: cover;
@@ -781,9 +781,9 @@ a {
   }
   .header__menu:hover {
     fill: #2196F3;
+    transition: 250ms;
   }
   .menu-modal {
-    width: 480px;
     position: absolute;
     display: block;
     top: 0px;
