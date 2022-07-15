@@ -8,12 +8,17 @@
 
     .page-header {
         display: flex;
-        justify-content: start;
-        align-items: center;
         height: 60px;
+        position: relative;
+    }
+
+    .page-header__navigate {
+        display: flex;
+        align-items: center;
     }
 
     .page-header__logo {
+        margin-right: 275px;
         text-decoration: none;
         font-family: 'Raleway', sans-serif;
         font-weight: 700;
