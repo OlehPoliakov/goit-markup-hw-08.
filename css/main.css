@@ -782,9 +782,6 @@ a {
   .header__menu:hover {
     fill: #2196F3;
   }
-  .header__menu.is-open:hover {
-    fill: #2196F3;
-  }
   .menu-modal {
     width: 480px;
     position: absolute;
