@@ -1,25 +1,27 @@
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) and (max-width: 1799px) {
     .hero {
-        padding-top: 118px;
-        padding-bottom: 118px;
-        padding-left: 204px;
-        padding-right: 204px;
-
-
-        margin: auto;
+        padding: 118px 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 400px;
+        min-width: 768px;
+        margin-left: auto;
+        margin-right: auto;
 
         background-image: linear-gradient(to right,
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)),
             url(../../images/hero.jpg);
 
-        width: 768px;
         background-repeat: no-repeat;
-        background-position: 50% 50%;
+        background-position: center;
         background-size: cover;
     }
 
     .hero__title {
+        width: 360px;
+            height: 84px;
         text-align: center;
         padding-bottom: 30px;
         font-weight: 900;
