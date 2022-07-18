@@ -1,6 +1,7 @@
 @media screen and (max-width: 767px) {
 .footer {
         min-width: 480px;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
         text-align: center;
@@ -123,6 +124,7 @@
         padding: 15px auto;
         padding-left: 10px;
         width: 450px;
+        max-width: 450px;
         height: 50px;
         background: #2F303A;
         color: rgba(255, 255, 255, 0.6);
