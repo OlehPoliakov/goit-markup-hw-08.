@@ -5,41 +5,7 @@
     }
 
     .portfolio-button {
-        display: flex;
-        justify-content: center;
         margin-bottom: 50px;
-    }
-
-    .portfolio-item {
-        & [type="button"] {
-            padding: 6px 22px;
-            border: none;
-            font-family: 'Roboto', sans-serif;
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 1.62;
-            color: var(--primary-text-color);
-            cursor: pointer;
-            border-radius: 4px;
-            transition: 250ms var(--timing-function);
-        }
-
-        & [type="button"]:hover,
-        & [type="button"]:focus {
-            color: var(--white-text-color);
-            background-color: var(--hover-text-color);
-            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-        }
-
-        &:not(:last-child) {
-            margin-right: 8px;
-        }
-    }
-
-    .portfolio-gallery {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
     }
 
     .portfolio-gallery__item {
@@ -68,40 +34,12 @@
         }
     }
 
-    .portfolio-gallery__header {
-        font-family: 'Roboto', sans-serif;
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 2;
-        letter-spacing: 0.06em;
-        color: var(--primary-text-color);
-    }
-
-    .portfolio-gallery__paragraph {
-        font-family: 'Roboto', sans-serif;
-        font-size: 16px;
-        line-height: 1.8;
-        color: var(--title-text-color);
-    }
-
     .portfolio-gallery__overlay--paragraph {
         font-weight: 400;
         font-size: 18px;
         line-height: 28px;
         letter-spacing: 0.03em;
         color: #FFFFFF;
-    }
-
-    .portfolio-gallery__item--box {
-        width: 370px;
-        position: relative;
-        overflow: hidden;
-        z-index: 1;
-        transition: 250ms var(--timing-function);
-
-        &:hover .portfolio-gallery__overlay {
-            transform: translatey(0);
-        }
     }
 
     .portfolio-gallery__description {
@@ -124,3 +62,5 @@
         transition: 250ms var(--timing-function);
     }
 }
+
+    

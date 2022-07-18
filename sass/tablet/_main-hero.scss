@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) and (max-width: 1799px) {
+@media screen and (min-width: 768px) {
     .hero {
         padding: 118px 0;
         display: flex;
@@ -21,7 +21,7 @@
 
     .hero__title {
         width: 360px;
-            height: 84px;
+        height: 84px;
         text-align: center;
         padding-bottom: 30px;
         font-weight: 900;

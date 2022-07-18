@@ -1,27 +1,19 @@
-@media screen and (min-width: 768px) and (max-width: 1200px) {
+@media screen and (min-width: 768px) {
     .footer {
         padding-top: 60px;
         padding-bottom: 60px;
         background-color: #2F303A;
     }
-
     .footer-nav {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         margin: auto;
     }
-
-    .footer-nav__adress {
-        text-align: center;
-        margin-right: 165px;
-    }
-
     .footer__logo {
         text-align: center;
         margin-bottom: 20px;
     }
-
     .footer__link {
         font-family: 'Raleway', sans-serif;
         font-style: normal;
@@ -31,15 +23,12 @@
         letter-spacing: 0.03em;
         color: var(--white-text-color);
     }
-
     .footer__link--blue {
         color: #2196F3;
     }
-
     .footer-adress__item {
         margin-top: 9px;
     }
-
     .footer-adress__link {
         font-size: 14px;
         line-height: 1.7;
@@ -51,8 +40,6 @@
             color: var(--hover-text-color);
         }
     }
-
-
     .footer-adress__contacts a {
         font-size: 14px;
         line-height: 1.7;
@@ -63,7 +50,6 @@
             color: var(--hover-text-color);
         }
     }
-
     .footer-join__paragraph {
         text-align: center;
         font-weight: 700;
@@ -73,6 +59,7 @@
         text-transform: uppercase;
         color: var(--white-text-color);
         margin-bottom: 20px;
+        padding-top: 10px;
     }
 
     .footer-join__icon {
@@ -83,7 +70,6 @@
             margin-right: 10px;
         }
     }
-
     .footer-join__link {
         display: flex;
         justify-content: center;
@@ -102,13 +88,11 @@
             border-radius: 50%;
         }
     }
-
     .footer-submint {
         margin-top: 60px;
         margin-left: auto;
         margin-right: auto;
     }
-
     .footer-submint__header {
         padding-top: 10px;
         margin-bottom: 20px;
@@ -124,7 +108,6 @@
     }
 
     .footer-submint__form {
-
         display: flex;
         flex-direction: column;
 
@@ -149,7 +132,6 @@
             font-style: normal;
         }
     }
-
     .footer-submint__button {
         margin-left: auto;
         margin-right: auto;
@@ -169,5 +151,11 @@
     .footer-submint__icon {
         fill: var(--white-text-color);
         margin-left: 10px;
-    }
+}
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+        .footer-nav__adress {
+            text-align: center;
+            margin-right: 165px;
+        }
 }

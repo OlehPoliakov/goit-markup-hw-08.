@@ -1,11 +1,10 @@
-@media screen and (min-width: 768px) and (max-width: 1200px) {
-.section-clients {
+@media screen and (min-width: 768px) {
+    .section-clients {
         display: flex;
         flex-wrap: wrap;
         padding-top: 60px;
         padding-bottom: 60px;
     }
-
     .clients__heading {
         text-align: center;
         font-weight: 700;
@@ -15,14 +14,18 @@
         color: var(--primary-text-color);
         margin-bottom: 30px;
     }
-
     .client {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
         margin: -15px;
     }
-
+    .client__image {
+            width: 226px;
+            height: 92px;
+        }
+    }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
     .client__link {
         width: 226px;
         height: 92px;
@@ -39,10 +42,5 @@
             border: 1px solid #2196F3;
             outline: none;
         }
-    }
-
-    .client__image {
-        width: 226px;
-        height: 92px;
     }
 }
